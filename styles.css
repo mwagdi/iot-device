@@ -1,0 +1,137 @@
+/* Add your CSS here. This file should */
+/* automatically hot reload into the app on save */
+
+html,body{
+    margin: 0;
+    font-size: 16px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.flex-container{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.input-container{
+    padding: 1em 3em 0;
+}
+h1{
+    padding: 0 3rem;
+}
+input{
+    padding: 0.75em 1em;
+    border-radius: 5px;
+    border: 1px solid #c6c6c6;
+}
+.main-wrap{
+    padding: 3em;
+}
+.readings-container{
+    padding-right: 2em;
+}
+.reading{
+    border: 1px solid red;
+    background: #ff8181;
+    border-radius: 10px;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+}
+.reading .btn{
+    background: #04d904;
+    border: none;
+    padding: 0.5em;
+    margin-left: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+.is-active{
+    color: #b80000;
+    font-weight: bold;
+}
+.reading--active{
+    border-color: green;
+    background: #8bff8b;
+}
+.reading--active .btn{
+    background: red;
+}
+.reading--active .is-active{
+    color: green;
+}
+.reading__details_item{
+    margin-bottom: 0.5em;
+}
+.status{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+.status__wrap{
+    background: white;
+    padding: 1em;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+.status__close{
+    border: none;
+    background: transparent;
+    font-size: 2em;
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+}
+.status__text{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.error .status__text{
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+}
+.indicator{
+    width: 400px;
+    padding: 4em 1em;
+}
+.indicator__bar{
+    width: 100%;
+    height: 30px;
+    background: red;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.indicator__bar_active{
+    height: 100%;
+    background: #00cd00;
+    transition: all 0.3s;
+}
+.indicator__numbers{
+    margin-top: 1em;
+}
